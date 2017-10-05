@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_margin="@dimen/fab_margin"/>
+
+
+    <include
+        android:id="@+id/content_view_include"
+        layout="@layout/content_view_include"/>
+
+
+    <ViewStub
+        android:id="@+id/stub_import"
+        android:inflatedId="@+id/content_view_stub"
+        android:layout="@layout/content_view_stub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
